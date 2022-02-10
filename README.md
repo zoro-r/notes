@@ -1,7 +1,7 @@
 # notes
 记录一直以来的一些问题以及解决方案
 
-## 问题3: monaco 编辑器任何获取当前行的的文本的内容
+## 问题3: monaco 编辑器如何获取当前行的的文本的内容？
     1、XXX.getModel().setValueInRange(); 方法
 
 ## 问题2: table的header进行sorter设置的时候，点击会导致表格滚到最左侧？
