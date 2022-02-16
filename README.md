@@ -1,6 +1,9 @@
 # notes
 记录一直以来的一些问题以及解决方案
 
+## <font color="red">问题5: electron 打包后的dmg文件运行会比编译器卡顿很多？</font>
+    暂无解决办法
+
 ## 问题4: react hooks组件 当遇到antv的 xxx.on('plot:click', (args: any) 方法的回调的时候，内部的变量会与外部的不一致；代码如下
    ```javascript
    
