@@ -1,6 +1,10 @@
 # notes
 记录一直以来的一些问题以及解决方案
 
+## 问题6: antd-pro 框架的自定义菜单如何配置？
+   
+   https://procomponents.ant.design/components/layout/#%E8%87%AA%E5%AE%9A%E4%B9%89-menu-%E7%9A%84%E5%86%85%E5%AE%B9
+
 ## <font color="red">问题5: electron 打包后的dmg文件运行会比编译器卡顿很多？</font>
     暂无解决办法
 
@@ -20,7 +24,8 @@
        
        当setData改变了data的值后 1和2的打印的值不一致 1依旧为更新之前的值
    ```
-   解决办法: 通过useRef变量缓存某些值或者方法，
+   解决办法: 通过useRef变量缓存某些值或者方法；
+   
    问题原因: 当前方法仅首次进行生成，生成的时候形成的了一个闭包，后续props的更没法使当前函数的刷新，所以导致函数的作用域还是旧的作用域；
 
 ## 问题3: monaco 编辑器如何获取当前行的的文本的内容？
