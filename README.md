@@ -1,12 +1,17 @@
 # notes
 记录一直以来的一些问题以及解决方案
 
+## 问题7: 游览器的跳转问题-- react-router 是这么实现的？
+   ```
+      待思考
+   ```
+
 ## 问题6: antd-pro 框架的自定义菜单如何配置？
    
    https://procomponents.ant.design/components/layout/#%E8%87%AA%E5%AE%9A%E4%B9%89-menu-%E7%9A%84%E5%86%85%E5%AE%B9
 
 ## <font color="red">问题5: electron 打包后的dmg文件运行会比编译器卡顿很多？</font>
-    暂无解决办法
+    M1芯片的电脑 打包需要和正常的打包不同
 
 ## 问题4: react hooks组件 当遇到antv的 xxx.on('plot:click', (args: any) 方法的回调的时候，内部的变量会与外部的不一致；代码如下
    ```javascript
