@@ -1,6 +1,30 @@
 # notes
 记录一直以来的一些问题以及解决方案
 
+## 问题8: react-keep 组件的实现思路
+   ```
+      将需要缓存的组件 在卸载的时候将其存放到外部的“display:none”的容器内部，保存其状态，当页面切换回来的时候，再将页面的恢复到对应的位置
+      
+      
+   ```
+   ```javascript
+      if (!presentParentNode || !originalParentNode) {
+       return;
+     }
+     const elementNodes = findElementsBetweenComments(originalParentNode, identification);
+     const commentNode = findComment(presentParentNode, identification);
+     if (!elementNodes.length || !commentNode) {
+       return;
+     }
+     elementNodes.push(elementNodes[elementNodes.length - 1].nextSibling as Node);
+     elementNodes.unshift(elementNodes[0].previousSibling as Node);
+     // Deleting comment elements when using commet components will result in component uninstallation errors
+     for (let i = elementNodes.length - 1; i >= 0; i--) {
+       presentParentNode.insertBefore(elementNodes[i], commentNode);
+     }
+     originalParentNode.appendChild(commentNode);
+   ```
+
 ## 问题7: 游览器的跳转问题-- react-router 是这么实现的？
    ```
       待思考
