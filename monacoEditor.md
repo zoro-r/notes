@@ -26,7 +26,7 @@ const editor.current = editor.create(monacoEleRef?.current, {
 
 ## 问题2：如何添加语言提示功能？
 
-```
+```javaScript
 languages.registerCompletionItemProvider(language, {
     triggerCharacters: ['.'], // 提示器的触发条件
     suggestions: [ // 提示内容对象
@@ -45,7 +45,7 @@ languages.registerCompletionItemProvider(language, {
 
 ## 问题3: 如何设置某段区域的背景色？
 
-```
+```javaScript
 // create 返回的对象
 editor.current.deltaDecorations(
   [],
@@ -63,7 +63,7 @@ editor.current.deltaDecorations(
 ```
 
 ## 问题4: 如何进行报错等提示
-```
+```javaScript
 editor.setModelMarkers(model, 'eslint', [
   {
     startLineNumber: 1,
