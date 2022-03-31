@@ -43,4 +43,4 @@ module: {
 
 ## 基本插件
  plugins：
-  HtmlWebpackPlugin html管理
+  HtmlWebpackPlugin html管理 https://github.com/jantimon/html-webpack-plugin
