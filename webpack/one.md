@@ -2,7 +2,7 @@
 
 基础命令 webpack
 
-基本配置：
+## 基本配置：
 ```json
   {
     "name": "webpack-demo",
@@ -26,3 +26,21 @@
   }
 
 ```
+
+## 资源配置
+
+```javaScript
+module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+```
+应保证 loader 的先后顺序：'style-loader' 在前，而 'css-loader' 在后。如果不遵守此约定，webpack 可能会抛出错误。
+
+## 基本插件
+ plugins：
+  HtmlWebpackPlugin html管理
