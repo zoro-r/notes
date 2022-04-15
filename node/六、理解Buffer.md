@@ -63,12 +63,37 @@ Buffer对象可以与字符串之间相互转换，目前之前的类型如下
   buf.write(string, [offset],[length],[encoding])
  ```
 ### Buffer 转字符串
-```
+
+```node
  bug.toString([encoding = 'UTF-8'], [start], [end])
  
- // 判断 是否
+ // 判断 是否支持编码
+ 
+ Buffer.isEncoding(encoding)
+ 
+ 对于不支持的类型，可以借助Node生态圈中的模块完成 iconv、iconv-lite
+ 
+ var iconv = require('iconv-lite');
+ var str = iconv.decode(buf,'win1251');
+ var bug = iconv.encode('Sample input string','win1251');
 ```
 
+### 乱码问题
+```
+ 造成原因，加入我们界定了Buffer对象的长度为11，而中文一个占3个字节,有些中文会被截断，所以会出现这种乱麻
+ 
+ 解决方法
+ 
+ 1、增加Buffer的长度
+ 2、
+ 
+ setEncoding
+ 
+```
+
+
+## Buffer与性能
+通过预先转换静态内容为Buffer对象，可以有效地减少CPU的重复使用，节省服务器资源，在NODE构建的WEB应用中，可以选择将页面中的动态内容和静态内容分离，静态内容部分为Buffer，
 
 
 
