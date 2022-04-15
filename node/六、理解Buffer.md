@@ -15,7 +15,7 @@ Buffer的用处是什么？
   => <Buffer e6 xx xx xx>
 ```
 
-## 存取值
+### 存取值
 ```node
   var buf = new Buffer(100);
   buf[10] ===> 0~255的一个随机整数
@@ -29,7 +29,7 @@ Buffer的用处是什么？
 
 ```
 
-## 内存分配
+### 内存分配
 
 buffer的内存分配事在node的C++层面实现内存申请的，Node 使用slab分配机制，slab是一块申请好的固定大小的内存区域，slab有三种状态
 
@@ -43,6 +43,30 @@ Node以8KB来界限来区分Buffer是大对象还是小对象
 
 ```
  Buffer.poolSize = 8 * 1024;
+```
+
+## 转换
+
+Buffer对象可以与字符串之间相互转换，目前之前的类型如下
+
+- ASCII
+- UTF-8
+- UTF-16LE/UCS-2
+- Base64
+- Binary
+- Hex
+
+### 字符串转Buffer
+ ```
+  new Buffer(str, [encoding]);
+  
+  buf.write(string, [offset],[length],[encoding])
+ ```
+### Buffer 转字符串
+```
+ bug.toString([encoding = 'UTF-8'], [start], [end])
+ 
+ // 判断 是否
 ```
 
 
