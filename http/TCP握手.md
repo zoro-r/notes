@@ -58,4 +58,10 @@ TCP的流量控制是由连接的每一端通过声明窗口大小来提供。Wi
 
 ### 四次挥手 
 
-挥手
+挥手的目的在于断开连接
+
+![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/2/23/170723e5c0e05829~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp)
+
+1、首先双方都处于ESTABLISHED
+2、**第一次挥手** 客户端想服务器发送FIN，seq=Y
+3、**第二次挥手** 服务器收到后向客户端发送ACK
