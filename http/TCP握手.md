@@ -63,5 +63,21 @@ TCP的流量控制是由连接的每一端通过声明窗口大小来提供。Wi
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/2/23/170723e5c0e05829~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp)
 
 1、首先双方都处于ESTABLISHED
-2、**第一次挥手** 客户端想服务器发送FIN，seq=Y
-3、**第二次挥手** 服务器收到后向客户端发送ACK
+2、**第一次挥手** 客户端想服务器发送FIN，seq=Y 进入FIN-WAIT-1的状态
+3、**第二次挥手** 服务器收到后向客户端发送ACK,ack=Y+1 表示确认收到 并进入CLOSE-WAIT状态，客户端收到后进入FIN-WAIT-2的状态
+4、**第三次挥手** 过了一会等数据处理完，服务器向客户端发送FIN，seq=Z，ack=Y+1 进入LAST-ACK状态
+5、**第四次挥手** 客户端收到后然后向服务端发送ACK，ack=Z+1，然后进入TIME_WAIT等到2个MSL后进入CLOSE状态，
+6、服务端收到后进入CLOSED状态 此时挥手结束
+
+
+问题：为什么有两次2**MSL（）MSL**状态
+- 1个 MSL 保证四次挥手中主动关闭方最后的 ACK 报文能最终到达对端
+- 1个 MSL 保证对端没有收到 ACK 那么进行重传的 FIN 报文能够到达
+
+### TCP 快速打开的原理(TFO)
+
+
+
+
+
+
