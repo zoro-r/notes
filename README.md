@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://nextjs.org">
-    <img src="https://img0.baidu.com/it/u=1134105984,359323383&fm=253&fmt=auto&app=138&f=JPEG?w=848&h=480" height="128">
+    <img src="https://user-images.githubusercontent.com/20312469/170867186-7f001128-3019-4160-964f-10254094f686.png">
     <h1 align="center">
-      notes
+      NOTES
     </h1>
     <p align="center">拒绝行动上的矮子，思想上的巨人</p>
   </a>
