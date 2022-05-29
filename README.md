@@ -1,5 +1,14 @@
-# notes
-个人笔记本 行动上的矮子，思想上的巨人
+<p align="center">
+  <a href="https://nextjs.org">
+    <img src="https://img0.baidu.com/it/u=1134105984,359323383&fm=253&fmt=auto&app=138&f=JPEG?w=848&h=480" height="128">
+    <h1 align="center">
+      notes
+    </h1>
+    <p align="center">拒绝行动上的矮子，思想上的巨人</p>
+  </a>
+</p>
+
+
 
 # 待完成清单
 - [ ] [如何进行源码调试](https://github.com/zoro-r/notes/commit/931b7e40ac785157803b942888cd11c39c6ed918)
