@@ -2,6 +2,8 @@
 
 ## 同域和同站
 
+https://juejin.cn/post/6877496781505200142
+
 同源：协议（scheme）+ 主机名（hostname）+ 端口号（port） 完全一致。
 
 同站：eTLD+1 完全一致。
