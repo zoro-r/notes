@@ -11,7 +11,7 @@
 
 
 # 待完成清单
-- [ ] [如何进行源码调试]([https://github.com/zoro-r/notes/commit/931b7e40ac785157803b942888cd11c39c6ed918](https://github.com/zoro-r/notes/blob/main/node/%E8%BD%AF%E9%93%BE%E4%BB%A5%E5%8F%8A%E6%BA%90%E7%A0%81%E8%B0%83%E8%AF%95.md))
+- [ ] [如何进行源码调试](https://github.com/zoro-r/notes/blob/main/node/%E8%BD%AF%E9%93%BE%E4%BB%A5%E5%8F%8A%E6%BA%90%E7%A0%81%E8%B0%83%E8%AF%95.md)
 - [ ] tsconfig.js 配置解析
 
 # 文章列表
