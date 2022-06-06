@@ -13,6 +13,7 @@
 # 待完成清单
 - [ ] [如何进行源码调试](https://github.com/zoro-r/notes/commit/931b7e40ac785157803b942888cd11c39c6ed918)
 - [ ] tsconfig.js 配置解析
+- [ ] 什么样的请求算简单请求
 
 # 文章列表
   - [ ] 前端工程化
