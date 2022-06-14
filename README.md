@@ -14,7 +14,6 @@
 - [ ] [如何进行源码调试](https://github.com/zoro-r/notes/blob/main/node/%E8%BD%AF%E9%93%BE%E4%BB%A5%E5%8F%8A%E6%BA%90%E7%A0%81%E8%B0%83%E8%AF%95.md)
 - [ ] tsconfig.js 配置解析
 - [ ] ts 搭建一个node项目
-- [ ] [Cookie](http://www.ruanyifeng.com/blog/2019/09/cookie-samesite.html)
 
 # 文章列表
   - [ ] 前端工程化
@@ -41,3 +40,4 @@
   - [ ] K8s + Docker
 - [ ] 网络相关
   - [x] [什么样的请求算简单请求](https://github.com/zoro-r/notes/blob/main/http/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E8%AF%B7%E6%B1%82%E7%AE%97%E7%AE%80%E5%8D%95%E8%AF%B7%E6%B1%82.md)
+  - [x] [Cookie 的 SameSite](http://www.ruanyifeng.com/blog/2019/09/cookie-samesite.html)
