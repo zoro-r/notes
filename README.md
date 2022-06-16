@@ -26,6 +26,8 @@
     - [ ] 文档管理
     - [ ] 需求管理
     - [ ] 客户端开发
+    - [ ] 微前端
+      - [ ] [代理模式](https://zhuanlan.zhihu.com/p/464511595)
 
   - [ ] 游览器原理
      - [x] [输入地址到页面呈现发生了什么？](https://github.com/zoro-r/notes/blob/main/%E6%B8%B8%E8%A7%88%E5%99%A8/%E8%BE%93%E5%85%A5%E4%B8%80%E6%AE%B5%E5%9C%B0%E5%9D%80%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%91%88%E7%8E%B0.md)
